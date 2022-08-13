@@ -1,0 +1,51 @@
+# List_A = [3, 7, 2, 9, 1, 5, 6, 4, 8]
+#
+# def bubble_sort (_list: list):
+#     for i in range(len(_list)-1):           #반복 사이클은 원소 개수 -1번
+#         for j in range(len(_list)-1 -i):    #2개씩 비교하므로 -1,사이클마다 반복횟수 감소 -i
+#             if _list[j] > _list[j+1]:
+#                 tmp = _list[j]              #교환하기 위한 빈 그릇 tmp 생성
+#                 _list[j] = _list[j+1]
+#                 _list[j+1] = tmp
+#
+#
+# bubble_sort(List_A)
+# print(List_A)
+
+
+
+# List_A = [3,7,2,9,1,5,6,4,8]
+# def Selection_Sort(_list:list):
+#     for i in range(len(_list)-1):       #i = 0 ~ 7
+#         least = i                       #최소값을 찾을 변수 least =값이 아니라 자리를 기억
+#         for j in range(i+1,len(_list)): #가장 좌측에 최소값이 오기 때문에 시작 범위를 i+1로 정한다.
+#             if _list[least] > _list[j]: #리스트[j]가 더 작을경우 최소값으로위치 기억
+#                 least = j
+#         tmp = _list[i]                  #리스트[i]와 리스트[least]를 교환
+#         _list[i] = _list[least]
+#         _list[least] = tmp
+#
+#
+# Selection_Sort(List_A)
+# print(List_A)
+
+
+
+
+
+
+# 삽입정렬 알고리즘
+# def Insertion_sort(_list:list):
+#     for i in range(1, len(_list)): #i를 1부터 n-1까지
+#         key = _list[i]             #현재 위치를 key값으로 저장
+#         j = i - 1                  #j는 i의 바로
+#         while _list[j] > key and j >= 0:    #key값과 j를 비교해 적절한 우치를 찾는다.
+#             _list[j + 1] = _list[j]         #적절한 위치를 찾을때 까지 j를 우측으로 옮김
+#             j = j -1
+#             _list[j + 1] = key #찾은 위치에 key값을 저장
+#     return _list
+# 
+# 
+# List_A = [3,7,2,9,1,5,6,4,8]
+# Insertion_sort(List_A)
+# print(List_A)
